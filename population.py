@@ -14,41 +14,35 @@ class Population(object):
         for i in range(self._size):
             self.chromosomes.append(self._generate_random_chromosome())
 
+    def generate_new_population(self):
+        self._rank_chromosomes()
+        elite = self._get_elite_members()
+        children = self._generate_children()
+        self.chromosomes = elite + children
+
     def get_max_fitness(self):
         return max([c.fitness for c in self.chromosomes])
 
     def get_end_result(self):
-        self.rank_chromosomes()
+        self._rank_chromosomes()
         return self.chromosomes[-1]
 
-    def calculate_similarity(self):
-        abs_sum = 0
-        for i in range(self._size - 1):
-            abs_sum += abs(self.chromosomes[i].fitness - self.chromosomes[i + 1].fitness)
-        return abs_sum / (self._size - 1)
-
-    def rank_chromosomes(self):
+    def _rank_chromosomes(self):
         self.chromosomes = sorted(self.chromosomes, key=lambda c: c.fitness)
 
-    def generate_new_population(self):
-        self.rank_chromosomes()
-        elite = self.get_elite_members()
-        children = self.generate_children()
-        self.chromosomes = elite + children
-
-    def get_elite_members(self):
+    def _get_elite_members(self):
         return self.chromosomes[-self._ELITISM:]
 
-    def generate_children(self):
+    def _generate_children(self):
         children = []
         for i in range(0, self._size - self._ELITISM, 2):
-            parents = self.choose_pair_of_parents()
-            children_pair = self.crossover(parents)
+            parents = self._choose_pair_of_parents()
+            children_pair = self._crossover(parents)
             children.append(children_pair[0])
             children.append(children_pair[1])
         return children
 
-    def crossover(self, parents):
+    def _crossover(self, parents):
         index = randrange(len(parents) - 1)
         child1 = Chromosome(parents[0].bit_array[:index] + parents[1].bit_array[index:], self._input_data)
         child2 = Chromosome(parents[1].bit_array[:index] + parents[0].bit_array[index:], self._input_data)
@@ -56,11 +50,9 @@ class Population(object):
         child2.mutate()
         return [child1, child2]
 
-    def choose_pair_of_parents(self):
-        max_val1 = float('-inf')
-        index1 = 0
-        max_val2 = float('-inf')
-        index2 = 0
+    def _choose_pair_of_parents(self):
+        max_val1 = max_val2 = float('-inf')
+        index1 = index2 = 0
         for i in range(self._size):
             score = (i + 1) * random()
             if score > max_val1:
@@ -70,7 +62,6 @@ class Population(object):
                 max_val2 = score
                 index2 = i
         return [self.chromosomes[index1], self.chromosomes[index2]]
-
 
     def _generate_random_chromosome(self):
         num_of_bits = len(self._input_data.items)

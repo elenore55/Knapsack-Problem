@@ -3,12 +3,12 @@ from population import Population
 
 if __name__ == '__main__':
     MAX_ITER = 1000
-    MAX_FITNESS_COUNT = 300
+    MAX_FITNESS_COUNT = 200
     data = InputData()
 
     p = Population(data)
     p.generate_initial_population()
-    ne_znam = []
+    max_fitness_list = []
 
     broken = False
     max_count = 0
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     for i in range(MAX_ITER):
         p.generate_new_population()
         max_fitness_new = p.get_max_fitness()
-        ne_znam.append(max_fitness_new)
+        max_fitness_list.append(max_fitness_new)
         if max_fitness_new == max_fitness:
             max_count += 1
             if max_count > MAX_FITNESS_COUNT:
@@ -28,4 +28,4 @@ if __name__ == '__main__':
 
     print('END: ', p.get_end_result())
     print(broken)
-    print(ne_znam)
+    print(max_fitness_list)
