@@ -2,22 +2,30 @@ from input_data import InputData
 from population import Population
 
 if __name__ == '__main__':
-    MAX_ITER = 500
+    MAX_ITER = 1000
+    MAX_FITNESS_COUNT = 300
     data = InputData()
-    # print(data.max_capacity)
-    # for i in data.items:
-    #     print(i)
+
     p = Population(data)
     p.generate_initial_population()
-    for i in range(len(p.chromosomes)):
-        print(p.chromosomes[i])
-    print()
-    print()
-    # par = p.choose_pair_of_parents()
-    # print(par[0], '\n', par[1])
-    for i in range(20):
+    ne_znam = []
+
+    broken = False
+    max_count = 0
+    max_fitness = 0
+    for i in range(MAX_ITER):
         p.generate_new_population()
-    p.generate_new_population()
-    # for i in range(len(p.chromosomes)):
-    #     print(p.chromosomes[i])
-    print(p.get_end_result())
+        max_fitness_new = p.get_max_fitness()
+        ne_znam.append(max_fitness_new)
+        if max_fitness_new == max_fitness:
+            max_count += 1
+            if max_count > MAX_FITNESS_COUNT:
+                broken = True
+                break
+        else:
+            max_count = 0
+            max_fitness = max_fitness_new
+
+    print('END: ', p.get_end_result())
+    print(broken)
+    print(ne_znam)
