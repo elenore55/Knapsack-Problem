@@ -2,13 +2,10 @@ from chromosome import Chromosome
 from random import choice, random, randrange
 
 
-# TODO: maybe don't choose parents with fitness 0
-
-
 class Population(object):
     _ELITISM = 10
 
-    def __init__(self, input_data, size=40):
+    def __init__(self, input_data, size=50):
         self._input_data = input_data
         self._size = size
         self.chromosomes = []
@@ -17,8 +14,12 @@ class Population(object):
         for i in range(self._size):
             self.chromosomes.append(self._generate_random_chromosome())
 
+    def get_end_result(self):
+        self.rank_chromosomes()
+        return self.chromosomes[-1]
+
     def rank_chromosomes(self):
-        sorted(self.chromosomes, key=lambda c: c.fitness)
+        self.chromosomes = sorted(self.chromosomes, key=lambda c: c.fitness)
 
     def generate_new_population(self):
         self.rank_chromosomes()
@@ -27,7 +28,7 @@ class Population(object):
         self.chromosomes = elite + children
 
     def get_elite_members(self):
-        return self.chromosomes[:self._ELITISM]
+        return self.chromosomes[-self._ELITISM:]
 
     def generate_children(self):
         children = []

@@ -14,7 +14,13 @@ class Chromosome(object):
             self.fitness = 0
 
     def __str__(self):
-        return str(self.bit_array) + ' ' + str(self.fitness)
+        return str(self.bit_array) + ' ' + str(self.fitness) + ' ' + str(self._total_w())
 
     def __len__(self):
         return len(self.bit_array)
+
+    def _total_w(self):
+        total_weight = 0
+        for i in range(len(self.bit_array)):
+            total_weight += self._input_data.items[i].weight * self.bit_array[i]
+        return total_weight
