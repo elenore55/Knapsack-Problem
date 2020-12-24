@@ -16,4 +16,4 @@ class InputData(object):
         self.max_capacity = int(header[1])
         for i in range(1, len(lines)):
             [weight, value] = lines[i].split(',')
-            self.items.append(Item(weight, value))
+            self.items.append(Item(int(weight), int(value)))
