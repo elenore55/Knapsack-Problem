@@ -15,3 +15,6 @@ class Chromosome(object):
 
     def __str__(self):
         return str(self.bit_array) + ' ' + str(self.fitness)
+
+    def __len__(self):
+        return len(self.bit_array)
