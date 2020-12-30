@@ -10,7 +10,7 @@ class Chromosome(object):
         self._calculate_fitness()
 
     def __str__(self):
-        result = 'Binary code: {0}\nFitness: {1}\nTotal weight: {2}'.format(self.bit_array, self.fitness, self._calculate_total_weight())
+        result = 'Binary code: {0}\nFitness: {1}\nTotal weight: {2}'.format(self.bit_array, self.fitness, self.calculate_total_weight())
         return result
 
     def __len__(self):
@@ -22,19 +22,19 @@ class Chromosome(object):
                 self.bit_array[i] = self._invert(self.bit_array[i])
         self._calculate_fitness()
 
+    def calculate_total_weight(self):
+        total_weight = 0
+        for i in range(len(self.bit_array)):
+            total_weight += self._input_data.items[i].weight * self.bit_array[i]
+        return total_weight
+
     def _calculate_fitness(self):
         self.fitness = 0
         for i in range(len(self.bit_array)):
             self.fitness += self._input_data.items[i].value * self.bit_array[i]
-        if self._calculate_total_weight() > self._input_data.max_capacity:
+        if self.calculate_total_weight() > self._input_data.max_capacity:
             self.fitness = 0
 
     @staticmethod
     def _invert(bit):
         return 1 - bit
-
-    def _calculate_total_weight(self):
-        total_weight = 0
-        for i in range(len(self.bit_array)):
-            total_weight += self._input_data.items[i].weight * self.bit_array[i]
-        return total_weight

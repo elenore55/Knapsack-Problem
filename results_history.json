@@ -1,0 +1,47 @@
+[
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13477838,
+    "overall_weight": 6398529,
+    "time": 12.213
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13505878,
+    "overall_weight": 6386705,
+    "time": 27.912
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 27.799
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13518963,
+    "overall_weight": 6398128,
+    "time": 19.102
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 16.57
+  }
+]

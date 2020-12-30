@@ -4,3 +4,4 @@ RATE_OF_MUTATION = 0.07
 ELITISM = 10
 DEFAULT_POPULATION_SIZE = 650
 DATA_PATH = 'data_knapsack01.txt'
+RESULTS_PATH = 'results_history.json'
