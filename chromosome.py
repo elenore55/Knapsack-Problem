@@ -1,9 +1,8 @@
 from random import random
+from config import RATE_OF_MUTATION
 
 
 class Chromosome(object):
-    _RATE_OF_MUTATION = 0.07
-
     def __init__(self, bit_array, input_data):
         self.bit_array = bit_array
         self._input_data = input_data
@@ -18,7 +17,7 @@ class Chromosome(object):
 
     def mutate(self):
         for i in range(len(self.bit_array)):
-            if random() < self._RATE_OF_MUTATION:
+            if random() < RATE_OF_MUTATION:
                 self.bit_array[i] = self._invert(self.bit_array[i])
         self._calculate_fitness()
 
