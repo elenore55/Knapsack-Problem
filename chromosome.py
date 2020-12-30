@@ -10,7 +10,8 @@ class Chromosome(object):
         self._calculate_fitness()
 
     def __str__(self):
-        return str(self.bit_array) + ' ' + str(self.fitness) + ' ' + str(self._calculate_total_weight())
+        result = 'Binary code: {0}\nFitness: {1}\nTotal weight: {2}'.format(self.bit_array, self.fitness, self._calculate_total_weight())
+        return result
 
     def __len__(self):
         return len(self.bit_array)
