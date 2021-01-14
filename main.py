@@ -54,7 +54,7 @@ if __name__ == '__main__':
     overall_time = time() - start
     print('RESULT >> ')
     result = p.get_end_result()
-    print(p.get_end_result())
+    print(result)
     if loop_broken:
         print('Algorithm converged')
     else:

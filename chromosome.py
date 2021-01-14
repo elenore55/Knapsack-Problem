@@ -10,7 +10,13 @@ class Chromosome(object):
         self._calculate_fitness()
 
     def __str__(self):
-        result = 'Binary code: {0}\nFitness: {1}\nTotal weight: {2}'.format(self.bit_array, self.fitness, self.calculate_total_weight())
+        result = 'Binary code: ' + str(self.bit_array)
+        total_weight = self.calculate_total_weight()
+        result += '\nItems:\n'
+        for i in range(len(self.bit_array)):
+            if self.bit_array[i]:
+                result += str(self._input_data.items[i]) + '\n'
+        result += '\nFitness: {0}\nTotal weight: {1}'.format(self.fitness, total_weight)
         return result
 
     def __len__(self):
