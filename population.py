@@ -43,7 +43,7 @@ class Population(object):
         return children
 
     def _crossover(self, parents):
-        index = randrange(len(parents) - 1)
+        index = randrange(len(parents[0].bit_array))
         child1 = Chromosome(parents[0].bit_array[:index] + parents[1].bit_array[index:], self._input_data)
         child2 = Chromosome(parents[1].bit_array[:index] + parents[0].bit_array[index:], self._input_data)
         child1.mutate()

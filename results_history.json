@@ -43,5 +43,384 @@
     "fitness": 13549094,
     "overall_weight": 6402560,
     "time": 16.57
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13518963,
+    "overall_weight": 6398128,
+    "time": 18.797
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 200,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13518963,
+    "overall_weight": 6398128,
+    "time": 14.777
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 150,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13518963,
+    "overall_weight": 6398128,
+    "time": 9.304
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 6.921
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.27,
+    "elitism": 10,
+    "fitness": 13505878,
+    "overall_weight": 6386705,
+    "time": 9.434
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.27,
+    "elitism": 10,
+    "fitness": 13518963,
+    "overall_weight": 6398128,
+    "time": 10.886
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 30,
+    "fitness": 13524340,
+    "overall_weight": 6397001,
+    "time": 6.902
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 30,
+    "fitness": 13494864,
+    "overall_weight": 6396544,
+    "time": 7.278
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 14.655
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13521334,
+    "overall_weight": 6392842,
+    "time": 9.246
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13477838,
+    "overall_weight": 6398529,
+    "time": 6.528
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13491239,
+    "overall_weight": 6401588,
+    "time": 6.056
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 9.705
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13482886,
+    "overall_weight": 6383545,
+    "time": 2.964
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13394219,
+    "overall_weight": 6403634,
+    "time": 2.905
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13423931,
+    "overall_weight": 6399861,
+    "time": 12.272
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13482886,
+    "overall_weight": 6383545,
+    "time": 10.686
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 30,
+    "fitness": 13549094,
+    "overall_weight": 6402560,
+    "time": 20.065
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13471217,
+    "overall_weight": 6401330,
+    "time": 5.954
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13524340,
+    "overall_weight": 6397001,
+    "time": 13.495
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13524340,
+    "overall_weight": 6397001,
+    "time": 8.286
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13521334,
+    "population size": 650,
+    "overall_weight": 6392842,
+    "time": 8.85
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13505878,
+    "population size": 400,
+    "overall_weight": 6386705,
+    "time": 3.116
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13518963,
+    "population size": 400,
+    "overall_weight": 6398128,
+    "time": 2.97
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 10,
+    "fitness": 13477838,
+    "population size": 400,
+    "overall_weight": 6398529,
+    "time": 2.702
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 30,
+    "fitness": 13524340,
+    "population size": 800,
+    "overall_weight": 6397001,
+    "time": 11.657
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 30,
+    "fitness": 13505878,
+    "population size": 800,
+    "overall_weight": 6386705,
+    "time": 12.883
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13549094,
+    "population size": 650,
+    "overall_weight": 6402560,
+    "time": 13.484
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13549094,
+    "population size": 650,
+    "overall_weight": 6402560,
+    "time": 16.438
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13524340,
+    "population size": 650,
+    "overall_weight": 6397001,
+    "time": 6.816
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 15,
+    "fitness": 13491239,
+    "population size": 650,
+    "overall_weight": 6401588,
+    "time": 11.12
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 17,
+    "fitness": 13524340,
+    "population size": 700,
+    "overall_weight": 6397001,
+    "time": 7.535
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 7.282
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 29.224
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13518963,
+    "population size": 700,
+    "overall_weight": 6398128,
+    "time": 7.09
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13524340,
+    "population size": 700,
+    "overall_weight": 6397001,
+    "time": 11.384
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 7.484
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13518963,
+    "population size": 700,
+    "overall_weight": 6398128,
+    "time": 9.138
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13497192,
+    "population size": 700,
+    "overall_weight": 6397040,
+    "time": 6.362
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 7.648
   }
 ]

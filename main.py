@@ -23,6 +23,7 @@ def save_result(fitness, weight, t):
                    'mutation_rate': cfg.RATE_OF_MUTATION,
                    'elitism': cfg.ELITISM,
                    'fitness': fitness,
+                   'population size': cfg.DEFAULT_POPULATION_SIZE,
                    'overall_weight': weight,
                    'time': round(t, 3)
                    })
