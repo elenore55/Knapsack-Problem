@@ -1,16 +1,15 @@
 from item import Item
+from config import DATA_PATH
 
 
 class InputData(object):
-    _PATH = 'data_knapsack01.txt'
-
     def __init__(self):
         self.max_capacity = 0
         self.items = []
         self._load()
 
     def _load(self):
-        file = open(self._PATH, 'r')
+        file = open(DATA_PATH, 'r')
         lines = [line.strip() for line in file]
         header = lines[0].split()
         self.max_capacity = int(header[1])

@@ -1,11 +1,10 @@
 from chromosome import Chromosome
 from random import choice, random, randrange
+from config import ELITISM, DEFAULT_POPULATION_SIZE
 
 
 class Population(object):
-    _ELITISM = 10
-
-    def __init__(self, input_data, size=650):
+    def __init__(self, input_data, size=DEFAULT_POPULATION_SIZE):
         self._input_data = input_data
         self._size = size
         self.chromosomes = []
@@ -31,21 +30,33 @@ class Population(object):
         self.chromosomes = sorted(self.chromosomes, key=lambda c: c.fitness)
 
     def _get_elite_members(self):
-        return self.chromosomes[-self._ELITISM:]
+        return self.chromosomes[-ELITISM:]
 
     def _generate_children(self):
         children = []
-        for i in range(0, self._size - self._ELITISM, 2):
+        for i in range(0, self._size - ELITISM, 2):
             parents = self._choose_pair_of_parents()
+            # children_pair = self._two_point_crossover(parents)
             children_pair = self._crossover(parents)
             children.append(children_pair[0])
             children.append(children_pair[1])
         return children
 
     def _crossover(self, parents):
-        index = randrange(len(parents) - 1)
+        index = randrange(len(parents[0].bit_array))
         child1 = Chromosome(parents[0].bit_array[:index] + parents[1].bit_array[index:], self._input_data)
         child2 = Chromosome(parents[1].bit_array[:index] + parents[0].bit_array[index:], self._input_data)
+        child1.mutate()
+        child2.mutate()
+        return [child1, child2]
+
+    def _two_point_crossover(self, parents):
+        i1 = randrange(len(parents) - 1)
+        i2 = randrange(len(parents) - 1)
+        if i2 > i1:
+            i1, i2 = i2, i1
+        child1 = Chromosome(parents[0].bit_array[:i1] + parents[1].bit_array[i1:i2] + parents[0].bit_array[i2:], self._input_data)
+        child2 = Chromosome(parents[1].bit_array[:i1] + parents[0].bit_array[i1:i2] + parents[1].bit_array[i2:], self._input_data)
         child1.mutate()
         child2.mutate()
         return [child1, child2]
