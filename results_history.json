@@ -452,5 +452,155 @@
     "population size": 700,
     "overall_weight": 6402560,
     "time": 11.495
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13505878,
+    "population size": 700,
+    "overall_weight": 6386705,
+    "time": 11.967
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 10.697
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13505878,
+    "population size": 700,
+    "overall_weight": 6386705,
+    "time": 6.974
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13524340,
+    "population size": 700,
+    "overall_weight": 6397001,
+    "time": 12.679
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13524340,
+    "population size": 700,
+    "overall_weight": 6397001,
+    "time": 9.925
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13477838,
+    "population size": 700,
+    "overall_weight": 6398529,
+    "time": 12.855
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13491239,
+    "population size": 700,
+    "overall_weight": 6401588,
+    "time": 12.027
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 8.359
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13496616,
+    "population size": 700,
+    "overall_weight": 6400461,
+    "time": 13.894
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13482886,
+    "population size": 700,
+    "overall_weight": 6383545,
+    "time": 6.619
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 9.52
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13505878,
+    "population size": 700,
+    "overall_weight": 6386705,
+    "time": 7.248
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13524340,
+    "population size": 700,
+    "overall_weight": 6397001,
+    "time": 12.744
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13505878,
+    "population size": 700,
+    "overall_weight": 6386705,
+    "time": 8.467
+  },
+  {
+    "max_iter": 1000,
+    "max_fitness_count": 100,
+    "mutation_rate": 0.07,
+    "elitism": 20,
+    "fitness": 13549094,
+    "population size": 700,
+    "overall_weight": 6402560,
+    "time": 9.08
   }
 ]

@@ -10,7 +10,7 @@ def plot_result_history(best_results):
     y = best_results
     x = [c for c in range(1, len(best_results) + 1)]
     plt.plot(x, y, 'green', markersize=5)
-    plt.xlabel('Iteration')
+    plt.xlabel('Generation')
     plt.ylabel('Best fitness')
     plt.show()
 

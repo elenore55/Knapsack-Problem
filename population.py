@@ -51,8 +51,8 @@ class Population(object):
         return [child1, child2]
 
     def _two_point_crossover(self, parents):
-        i1 = randrange(len(parents) - 1)
-        i2 = randrange(len(parents) - 1)
+        i1 = randrange(len(parents[0].bit_array) - 1)
+        i2 = randrange(len(parents[0].bit_array) - 1)
         if i2 > i1:
             i1, i2 = i2, i1
         child1 = Chromosome(parents[0].bit_array[:i1] + parents[1].bit_array[i1:i2] + parents[0].bit_array[i2:], self._input_data)
